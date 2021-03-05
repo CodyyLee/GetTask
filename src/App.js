@@ -1,17 +1,21 @@
-import React from 'react';
-
-//data import
+import React, { useState } from 'react';
 import store from './store/store';
 
 //component imports
 import Navigation from './components/navigation/Navigation';
-import Tasks from './components/tabs/Tasks';
-import Settings from './components/tabs/Settings';
+
+export const AppContext = React.createContext(store)
 
 function App() {
+
+  const [data, setData] = useState(store);
+  const value = { data, setData };
+
   return (
     <div className="App">
-      <Navigation />
+      <AppContext.Provider value={value}>
+        <Navigation />
+      </AppContext.Provider>
     </div>
   );
 }

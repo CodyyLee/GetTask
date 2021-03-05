@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { AppBar, Tabs, Tab } from '@material-ui/core';
-import store from '../../store/store';
 
-import Settings from '../tabs/Settings';
-import Tasks from '../tabs/Tasks';
-import Manage from '../tabs/Manage';
+//tabs
+import Settings from '../tabs/settings/Settings';
+import Tasks from '../tabs/tasks/Tasks';
+import Manage from '../tabs/manage/Manage';
 
 export default function Navigation() {
 

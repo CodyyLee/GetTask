@@ -1,5 +1,6 @@
 let store = {
-    tab: 0
+    categories: ['General'],
+    tasks: []
 }
 
 export default store;

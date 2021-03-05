@@ -17,7 +17,7 @@ export default function Navigation() {
     return (
         <>
             <AppBar position='static'>
-                <Tabs value={store.tab} onChange={changeHandler}>
+                <Tabs value={curr} onChange={changeHandler}>
                     <Tab label='Get Task'/>
                     <Tab label='Manage Tasks'/>
                     <Tab label='Settings'/>

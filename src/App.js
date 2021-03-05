@@ -1,3 +1,5 @@
+import React from 'react';
+
 //data import
 import store from './store/store';
 
